@@ -17,4 +17,6 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             cd /var/www/html/AJAX/Components
-            git pull origin main
+            git submodule update --remote --merge
+     	    git pull origin main --recurse-submodules
+
