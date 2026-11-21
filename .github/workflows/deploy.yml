@@ -18,5 +18,4 @@ jobs:
           script: |
             cd /var/www/html/AJAX/Components
             git submodule update --remote --merge
-     	    git pull origin main --recurse-submodules
-
+            git pull main --recurse-submodules
