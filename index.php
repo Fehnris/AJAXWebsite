@@ -1,9 +1,33 @@
+<?php
+
+session_start();
+
+// Require https
+if ($_SERVER['HTTPS'] != "on") {
+    $url = "https://". $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+    header("Location: $url");
+    exit;
+}
+
+//PHP library and PHP global settings files to include
+include './Settings/Settings.php';
+include './Components/AM/Server/AJAXManagerServer.php';
+
+//Database Authentication and database selection variables
+$DB_HOST = $mysqlDataBaseDetails['DB_HOST'];
+$DB_USER = $mysqlDataBaseDetails['DB_USER'];
+$DB_PASSWORD = $mysqlDataBaseDetails['DB_PASS'];
+$DB_NAME = $mysqlDataBaseDetails['DB_NAME'];
+
+$authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PHPScriptAuth", $_SERVER['PHP_SELF']);
+
+?>
 <html>
 	<head>
-		<script type="text/javascript" src="../Javascript/AJAXManagerClient.js"></script>
-		<script type="text/javascript" src="../Javascript/InteractiveTextBox.js"></script>
-		<script type="text/javascript" src="../Javascript/InteractiveSearchButton.js"></script>
-		<script type="text/javascript" src="../Javascript/InteractiveLink.js"></script>
+		<script type="text/javascript" src="./Components/AM/Client/AJAXManagerClient.js"></script>
+		<script type="text/javascript" src="./Components/AWC/InteractiveTextBox.js"></script>
+		<script type="text/javascript" src="./Components/AWC/InteractiveSearchButton.js"></script>
+		<script type="text/javascript" src="./Components/AWC/InteractiveLink.js"></script>
 		<script>
 			//Array containing choices that will show in the text field dropdown.  Relevant choices will show dependant on what is typed.
 			var choicesArray = ["alpha", "beta", "bravo", "car", "carrot", "cannon"];
@@ -16,9 +40,8 @@
 	<body>
 <!-- -->
 		<script>
-			<?php $authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PHPScriptAuth", $_SERVER['PHP_SELF']); ?>
 			AJAX = new AJAXManagerClient();
-			AJAX.Authorise("../PHP_Fetch/AJAXInitialisation.php", <?php echo $authObj->Initialise(); ?>);
+			AJAX.Authorise("./Components/AM/Client/AJAXInitialisation.php", <?php echo $authObj->Initialise(); ?>);
 
 			var optTB = { 'dataSource' : "AJAX", 'AMCREF' : AJAX, 'AMCAPI' : AJAX.addToQueue, 'searchDelay' : 350 };
 			var optSBL = { 'dataSource' : "AJAX", 'AMCREF' : AJAX, 'AMCAPI' : AJAX.addToQueue, 'DATAFORMATREF' : this, 'DATAFORMATAPI' : showResultsPanel,'searchDelay' : 150 };
