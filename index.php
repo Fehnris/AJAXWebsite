@@ -14,7 +14,7 @@
 		</script>
 	</head>
 	<body>
-
+<!-- -->
 		<script>
 			<?php $authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PHPScriptAuth", $_SERVER['PHP_SELF']); ?>
 			AJAX = new AJAXManagerClient();
