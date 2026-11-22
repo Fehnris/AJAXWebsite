@@ -38,7 +38,6 @@ $authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PH
 		</script>
 	</head>
 	<body>
-<!-- -->
 		<script>
 			AJAX = new AJAXManagerClient();
 			AJAX.Authorise("./Components/AM/Client/AJAXInitialisation.php", <?php echo $authObj->Initialise(); ?>);
