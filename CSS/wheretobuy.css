@@ -208,14 +208,14 @@ body {
 	border: 2px solid #888888;
 	color: #555555;
 	background-color: transparent;
-	background-image: url(../images/white50PercentTrans.png);
+	background-image: url(../../images/white50PercentTrans.png);
 	background-repeat: repeat;
 }
 
 .searchButton {
 	font-family: myriad_pro_regular;
 	font-size: 13pt;
-	background-image: url(../images/searchIcon3.png);
+	background-image: url(../../images/searchIcon3.png);
 	background-position: center center;
 	background-size: 28px auto;
 	background-repeat: no-repeat;
