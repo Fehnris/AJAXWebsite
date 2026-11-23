@@ -14,8 +14,8 @@ if ($_SERVER['HTTPS'] != "on") {
 }
 
 //PHP library and PHP global settings files to include
-include './Settings/Settings.php';
-include './Components/AM/Server/AJAXManagerServer.php';
+include '../Settings/Settings.php';
+include './AM/Server/AJAXManagerServer.php';
 
 //Database Authentication and database selection variables
 $DB_HOST = $mysqlDataBaseDetails['DB_HOST'];
