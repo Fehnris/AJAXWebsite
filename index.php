@@ -52,7 +52,7 @@ $authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PH
 				var optTB = { 'dataSource' : "AJAX", 'AMCREF' : AJAX, 'AMCAPI' : AJAX.addToQueue, 'searchDelay' : 350 };
 				
 				var dealerNameTB = new InteractiveTextBox("dealerSearchDealerNameID", "dealerSearchDealerNameAutoCompleteID", mrgObj(optTB,
-						{ 'defaultValue' : "Dealer Name", 'AJAXURL' : "./APIs/fetchDealerNames.php" }));
+						{ 'defaultValue' : "Enter Value", 'AJAXURL' : "./APIs/fetchDealerNames.php" }));
 
 				
 			});
