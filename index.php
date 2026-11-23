@@ -47,7 +47,7 @@ $authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PH
 				// Runs as soon as the HTML structure is ready
 				
 				AJAX = new AJAXManagerClient();
-				AJAX.Authorise("./Components/AM/Client/AJAXInitialisation.php", <?php echo $authObj->Initialise(); ?>);
+				AJAX.Authorise("./AM/Client/AJAXInitialisation.php", <?php echo $authObj->Initialise(); ?>);
 
 				var optTB = { 'dataSource' : "AJAX", 'AMCREF' : AJAX, 'AMCAPI' : AJAX.addToQueue, 'searchDelay' : 350 };
 				
