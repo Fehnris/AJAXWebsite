@@ -28,6 +28,8 @@ $authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PH
 ?>
 <html>
 	<head>
+		<title>AJAX components examples</title>
+		<link href="./CSS/wheretobuy.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="./Components/AM/Client/AJAXManagerClient.js"></script>
 		<script type="text/javascript" src="./Components/AWC/InteractiveTextBox.js"></script>
 		<script type="text/javascript" src="./Components/AWC/InteractiveSearchButton.js"></script>

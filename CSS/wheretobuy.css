@@ -1,0 +1,522 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #fcfcfc;
+	color: #555555;
+}
+
+#searchDivInner {
+	width: auto;
+	margin: 2px;
+	/*background-image: url(../images/largeGlobe.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;*/
+	/*min-height: 280px;*/
+}
+#searchDivUKRadio {
+	width: auto;
+	margin: 2px;
+	background-image: url(../images/map_base_UK_Light.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	background-color: #fafafa;
+	min-height: 200px;
+}
+#searchDivWWRadio {
+	width: auto;
+	margin: 2px;
+	background-image: url(../images/wwMap2.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: #fafafa;
+	min-height: 200px;
+}
+
+.resultPanelsUK, .resultPanelsWW {
+}
+.searchDivInner {
+	width: auto;
+	margin: 2px;
+	background-color: #f7f7f7;
+	background-image: url(../images/wtbmiddle.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom center;
+	/*background-image: url(../images/globeWhite.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;*/
+}
+
+#searchResultsDivInner {
+	width: auto;
+	margin: 2px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	background-color: #fafafa;
+	min-height: 280px;
+}
+
+.searchDivOuter {
+	background-color: #FFFFFF;
+}
+.floatColumnHalfWidth {
+	float: left;
+	width: 50%;
+}
+.floatColumn34 {
+	float: left;
+	width: 34%;
+}
+.floatColumn30 {
+	float: left;
+	width: 30%;
+}
+.floatColumn5 {
+	display: none;
+	float: left;
+	width: 5%;
+}
+.floatColumn {
+	float: left;
+	width: 70px;
+}
+
+.floatColumn33 {
+	float: left;
+	width: 33%;
+}
+
+.radioContainer {
+	height: 62px;
+	width: 62px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.searchComponentUK, .searchComponentWW {
+	position: static;
+	width: auto;
+	height: 100px;
+}
+.relativeComponentContainer {
+	position: static;
+	width: auto;
+	min-height: 90px;
+}
+#searchArrowUKPC, #searchArrowUKDN, #searchArrowWWCN, #searchArrowWWDN {
+	position: static;
+	width: auto;
+}
+#searchArrowUKAToZ, #searchArrowWWAToZ {
+	position: static;
+	width: auto;
+}
+#rwd780 {
+	display: none;
+	color: #000000;
+}
+.arrowGraphic {
+	background-image:url(../images/searchHighlight.png);
+}
+.lineGraphic {
+	background-image: url(../images/searchHighlightLine.png);
+}
+.arrowContainer {
+	display: none;
+	width: auto;
+}
+.searchOptionIndicatorUK, .searchOptionIndicatorWW {
+	
+	width: auto;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 60px;
+	background-size: 100% 60px;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+.searchResultsPanelBackground {
+	/*display: none;*/
+	background-image: url(../images/wtbbottom.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom center;
+}
+.searchOptionIndicatorLine {
+}
+#UKPostCodeComponent, #WWCountryNameComponent {
+	display: none;
+}
+#UKDealerNameComponent, #UKAToZComponent, #WWDistributorNameComponent, #WWAToZComponent {
+	display: none;
+}
+
+.searchDivColumnOuter {
+	float: left;
+	width: 50%;
+	background-color: #FFFFFF;
+}
+
+
+.formHeadingH1 {
+	font-family: myriad_pro_regular;
+	font-size: 13pt;
+	font-weight: normal;
+	color: #000000;
+}
+
+.formHeadingH2 {
+	font-family: myriad_pro_regular;
+	font-size: 13pt;
+}
+.searchLink {
+	font-family: myriad_pro_regular;
+	font-size: 13pt;
+}
+
+
+.formHeadingH3 {
+	font-family: myriad_pro_regular;
+	font-size: 13pt;
+	font-weight: normal;
+	color: #000000;
+}
+.addressHeading {
+	font-family: myriad_pro_regular;
+	font-size: 15pt;
+	font-weight: normal;
+	color: #000000;
+}
+.boldList {
+	font-family: myriad_pro_regular;
+	font-size: 13pt;
+	line-height: 150%;
+}
+
+.searchField {
+	font-family: myriad_pro_regular;
+	font-size: 13pt;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 2px solid #888888;
+	color: #555555;
+	background-color: transparent;
+	background-image: url(../images/white50PercentTrans.png);
+	background-repeat: repeat;
+}
+
+.searchButton {
+	font-family: myriad_pro_regular;
+	font-size: 13pt;
+	background-image: url(../images/searchIcon3.png);
+	background-position: center center;
+	background-size: 28px auto;
+	background-repeat: no-repeat;
+	border: 2px solid transparent;
+	background-color: transparent;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 0px;
+}
+
+#contentWrapper {
+	width: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 40px;
+}
+
+#tempSpacer {
+	width: auto;
+	/*min-height: 700px;*/
+	background-color: #fcfcfc;
+}
+#searchContainer {
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-height: 400px;
+	background-color: #fcfcfc;
+	background-size: contain;
+}
+#mainHeaderContainer {
+	padding-top: 5px;
+}
+.searchElement {
+	display: inline-block;
+	padding-left: 0px;
+	text-align: left;
+
+}
+
+#debug {
+	text-align: left;
+}
+.searchElementColumn {
+	float: left;
+}
+#dealerSearchDealerNameAutoCompleteID {
+	background-color: #FFFFFF;
+	border-left: 1px solid #bbbbbb;
+	border-right: 1px solid #bbbbbb;
+	border-bottom: 1px solid #bbbbbb;
+	border-top: 0px solid #bbbbbb;
+	padding-left: 0px;
+	display: none;
+	padding-right: 0px;
+}
+#distributorSearchDistributorNameAutoCompleteID {
+	background-color: #FFFFFF;
+	border-left: 1px solid #bbbbbb;
+	border-right: 1px solid #bbbbbb;
+	border-bottom: 1px solid #bbbbbb;
+	border-top: 0px solid #bbbbbb;
+	padding-left: 0px;
+	display: none;
+	padding-right: 0px;
+}
+#distributorSearchCountryNameAutoCompleteID {
+	background-color: #FFFFFF;
+	border-left: 1px solid #bbbbbb;
+	border-right: 1px solid #bbbbbb;
+	border-bottom: 1px solid #bbbbbb;
+	border-top: 0px solid #bbbbbb;
+	padding-left: 0px;
+	display: none;
+	padding-right: 0px;
+}
+.searchFieldRelativeContainer {
+	position: relative;
+	width: 100%;
+}
+.searchFieldAbsoluteContainer {
+	position: absolute;
+	width: inherit;
+}
+.dropDownItemContainer {
+	font-family: myriad_pro_regular;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	font-size: 13pt;
+	text-align: left;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.dropDownItemContainerError {
+	font-family: myriad_pro_regular;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 13pt;
+	color: #AAAAAA;
+	text-align: left;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.dropDownItemContainer:hover {
+	background-color: #BFDDF5;
+}
+.testBorder {
+	border: 1px solid black;
+}
+.textAlignLeft {
+	font-family: myriad_pro_regular;
+	font-size: 13pt;
+	text-align: left;
+}
+.padLeft20 {
+	padding-left: 20px;
+}
+.searchFieldPad {
+	text-align: left;
+	padding-left: 30px;
+}
+.orColumn {
+	font-weight: bold;
+	font-size: 14pt;
+}
+.searchLink:hover {
+	cursor: pointer;
+	color: #FFFFFF;
+}
+.minHeight700 {
+	min-height: 700px;
+}
+.responsiveFourColumnOuter {
+	float: left;
+	width: 50%;
+}
+.responsiveFourColumnInner {
+	width: auto;
+}
+.fourColumnOuter {
+	float: left;
+	width: 50%;
+}
+.fourColumnInner {
+	float: left;
+	width: 50%;
+}
+.listItemClass:hover {
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.listItemClass {
+}
+.contactIcon {
+	height: 18px;
+	width: auto;
+}
+.padSides40 {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.dealerColumn {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.fiftyPercentCentre {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.searchComponentSelector {
+	padding-top: 15px;
+	display: block;
+	font-size: 11pt;
+	width: auto;
+	text-align: center;
+}
+
+.componentSelectionButtonUK, .componentSelectionButtonWW {
+	border-radius: 14px;
+	border: 1px solid #000000;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 4px;
+	margin-right: 4px;
+	color: #000000;
+}
+
+.componentSelectionButtonUK:hover, .componentSelectionButtonWW:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+#UKPostCodeRadio {
+	
+}
+
+#UKDealerNameRadio {
+	
+}
+
+#UKAToZRadio {
+	
+}
+
+.addressBox {
+	background-color: #F5F5F5;
+	width: 100%;
+	min-height: 450px;
+}
+
+.addressInfo {
+	vertical-align: text-top;
+	line-height: 1.5;
+	border-top: 2px solid #FFFFFF;
+	border-left: 2px solid #FFFFFF;
+	border-bottom: 2px solid #FFFFFF;
+	padding: 30px;
+}
+
+.addressImage {
+	width: 60%;
+	background-image: url(../images/distdealimages/audiovenuelondon.jpg);
+	background-size: cover;
+}
+
+@media screen and (min-width:615px) {
+	#searchDivUKRadio {
+		min-height: 280px;
+	}
+	#searchDivWWRadio { 
+		min-height: 280px;
+	}
+	/*.dealerColumn {
+		width: 600px;
+	}*/
+	/*.responsiveFourColumnOuter {
+		float: left;
+		width: 50%;
+	}*/
+}
+
+@media screen and (min-width:780px) {
+	#searchContainer {
+		min-height: 200px;
+	}
+	.responsiveFourColumnInner {
+		float: left;
+		width: 50%;
+	}
+	/*.dealerColumn {
+		float: left;
+		width: 50%;
+	}*/
+	.searchComponentSelector {
+		display: none;
+	}
+	.relativeComponentContainer {
+		position: static;
+		width: auto;
+		min-height: 90px;
+	}
+	.searchComponentUK, .searchComponentWW {
+		position: static;
+		float: left;
+		width: 33%;
+	}
+	.searchOptionIndicatorUK, .searchOptionIndicatorWW {
+		position: static;
+		width: auto;
+		display: none;
+	}
+	#rwd780 {
+		color: #FFFFFF;
+	}
+	#searchArrowUKPC, #searchArrowUKDN, #searchArrowWWCN, #searchArrowWWDN {
+		float: left;
+		width: 33%;
+	}
+	#searchArrowUKAToZ, #searchArrowWWAToZ {
+		float: left;
+		width: 34%;
+	}
+	#UKPostCodeComponent, #UKDealerNameComponent, #UKAToZComponent,	#WWCountryNameComponent, #WWDistributorNameComponent, #WWAToZComponent {
+		display: block;
+	}
+	
+}
+
+@media screen and (min-width:1041px) {
+	#contentWrapper {
+		width: 1024px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+	}
+}
