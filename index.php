@@ -30,6 +30,7 @@ $authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PH
 	<head>
 		<title>AJAX components examples</title>
 		<link href="./CSS/wheretobuy.css" rel="stylesheet" type="text/css" />
+		<link href="./CSS/customRadioButton.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="./AM/Client/AJAXManagerClient.js"></script>
 		<script type="text/javascript" src="./AWC/InteractiveTextBox.js"></script>
 		<script type="text/javascript" src="./AWC/InteractiveSearchButton.js"></script>
