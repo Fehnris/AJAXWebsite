@@ -35,6 +35,12 @@ $authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PH
 		<script type="text/javascript" src="./AWC/InteractiveSearchButton.js"></script>
 		<script type="text/javascript" src="./AWC/InteractiveLink.js"></script>
 		<script>
+		
+			function mrgObj(obj1, obj2) {
+				for (var attrname in obj2) { obj1[attrname] = obj2[attrname]; }
+				return obj1;
+			}
+		
 			//Defining function to run when the page has loaded for interactive javascript of text box
 			document.addEventListener("DOMContentLoaded", () => {
 				// Runs as soon as the HTML structure is ready
