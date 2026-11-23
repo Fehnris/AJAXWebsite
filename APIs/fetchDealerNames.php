@@ -8,7 +8,7 @@ session_start();
 
 //PHP library and PHP global settings files to include
 require __DIR__.'/../../Settings/Settings.php';
-require __DIR__.'/../AM/AJAXManagerServer.php';
+require __DIR__.'/../AM/Server/AJAXManagerServer.php';
 
 //Database Authentication and database selection variables
 $DB_HOST = $mysqlDataBaseDetails['DB_HOST'];
