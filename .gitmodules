@@ -1,6 +1,8 @@
 [submodule "AM"]
 	path = AM
 	url = https://github.com/Fehnris/AJAXManager
+	branch = master
 [submodule "AWC"]
 	path = AWC
 	url = https://github.com/Fehnris/AJAXWebComponents
+	branch = master
