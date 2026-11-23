@@ -52,6 +52,28 @@ $authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PH
 			var dealerNameSB = new InteractiveSearchButton("dealerSearchDealerNameButtonID", mrgObj(optSBL,
 						{ 'associatedTextFieldID' : "dealerSearchDealerNameID", 'AJAXURL' : "../PHP_Fetch/fetchDealersByName.php" }));
 		</script>
+		
+		<div id='UKDealerNameComponent' class='searchComponentUK'>
+          <div class='searchElement'>
+              <h1 class='formHeadingH3'>Find a Dealer by Name</h1>
+              <div class='searchElementColumn'>
+                <div class='searchFieldRelativeContainer'>
+                  <input type='text' name='dealerSearchDealerNameID' id='dealerSearchDealerNameID'
+			   class='searchField' value='Dealer Name' autocomplete='off'/>
+                  </div>
+                <div class='searchFieldRelativeContainer'>
+                  <div class='searchFieldAbsoluteContainer'>
+                    <div id='dealerSearchDealerNameAutoCompleteID'></div>
+                    </div>
+                  </div>
+                </div>
+              <div class='searchElementColumn'>
+                <input type='button' name='dealerSearchName' id='dealerSearchDealerNameButtonID' class='searchButton' value='&nbsp;&nbsp;&nbsp;&nbsp;' />
+                </div>
+              <div class='clearFloat'></div>
+              </div>
+            </div>
+		
 	
 	</body>
 </html>
