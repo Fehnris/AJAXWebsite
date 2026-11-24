@@ -1,0 +1,27 @@
+name: Sync Submodules
+
+on:
+  repository_dispatch:
+    types: [submodule-updated]
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout AJAXWebsite
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          token: ${{ secrets.SUBMODULE_SYNC_TOKEN }}
+
+      - name: Update AM and AWC to latest master
+        run: |
+          git submodule update --remote --merge
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [[ -n $(git status --porcelain) ]]; then
+            git add AM AWC
+            git commit -m "Auto-update AM and AWC submodules"
+            git push
+          fi
