@@ -10,14 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout AJAXWebsite
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           submodules: recursive
           token: ${{ secrets.SUBMODULE_SYNC_TOKEN }}
 
       - name: Update AM and AWC to latest master
         run: |
-          git submodule update --remote --merge
+          git -C AM fetch origin master
+          git -C AM checkout -B master origin/master
+          git -C AWC fetch origin master
+          git -C AWC checkout -B master origin/master
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if [[ -n $(git status --porcelain) ]]; then
