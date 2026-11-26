@@ -133,7 +133,7 @@ body {
 }
 
 #UKDealerNameComponent, #UKAToZComponent, #WWDistributorNameComponent, #WWAToZComponent {
-	/*display: none;*/
+	display: block;
 }
 
 .searchDivColumnOuter {
