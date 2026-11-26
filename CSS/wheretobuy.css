@@ -15,27 +15,6 @@ body {
 	background-size: cover;*/
 	/*min-height: 280px;*/
 }
-#searchDivUKRadio {
-	width: auto;
-	margin: 2px;
-	background-image: url(../images/map_base_UK_Light.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: contain;
-	background-color: #fafafa;
-	min-height: 200px;
-}
-#searchDivWWRadio {
-	width: auto;
-	margin: 2px;
-	background-image: url(../images/wwMap2.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	background-color: #fafafa;
-	min-height: 200px;
-}
-
 .resultPanelsUK, .resultPanelsWW {
 }
 .searchDivInner {
@@ -97,7 +76,7 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
-.searchComponentUK, .searchComponentWW {
+.searchComponentUK {
 	position: static;
 	float: left;
 	width: 33%;
@@ -152,11 +131,9 @@ body {
 }
 .searchOptionIndicatorLine {
 }
-#UKPostCodeComponent, #WWCountryNameComponent {
-	display: none;
-}
+
 #UKDealerNameComponent, #UKAToZComponent, #WWDistributorNameComponent, #WWAToZComponent {
-	display: none;
+	/*display: none;*/
 }
 
 .searchDivColumnOuter {
