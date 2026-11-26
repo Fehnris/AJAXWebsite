@@ -60,6 +60,12 @@ $authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PH
 		</script>
 	</head>
 	<body>
+		<div id='searchDivOuter' class='searchDivOuter'>
+			<div id='searchDivInner' class='searchDivInner'>
+				<div id='searchDivColumnOuter' class='searchDivColumnOuter'>
+					<div id='searchDivColumnInner' class='searchDivColumnInner'>
+						<div id='searchComponentOuter' class='searchComponentOuter'>
+							<div id='searchComponentInner' class='searchComponentInner'>
 		<div id='UKDealerNameComponent' class='searchComponentUK'>
           <div class='searchElement'>
               <h1 class='formHeadingH3'>Find a Dealer by Name</h1>
@@ -79,8 +85,13 @@ $authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PH
                 </div>
               <div class='clearFloat'></div>
               </div>
-            </div>
-		
+            </div>dddddd
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 	
 	</body>
 </html>

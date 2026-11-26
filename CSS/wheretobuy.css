@@ -486,9 +486,9 @@ body {
 		min-height: 90px;
 	}
 	.searchComponentUK, .searchComponentWW {
-		position: static;
+		/*position: static;
 		float: left;
-		width: 33%;
+		width: 33%;*/
 	}
 	.searchOptionIndicatorUK, .searchOptionIndicatorWW {
 		position: static;
