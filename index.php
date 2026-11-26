@@ -60,38 +60,41 @@ $authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PH
 		</script>
 	</head>
 	<body>
-		<div id='searchDivOuter' class='searchDivOuter'>
-			<div id='searchDivInner' class='searchDivInner'>
-				<div id='searchDivColumnOuter' class='searchDivColumnOuter'>
-					<div id='searchDivColumnInner' class='searchDivColumnInner'>
-						<div id='searchComponentOuter' class='searchComponentOuter'>
-							<div id='searchComponentInner' class='searchComponentInner'>
-		<div id='UKDealerNameComponent' class='searchComponentUK'>
-          <div class='searchElement'>
-              <h1 class='formHeadingH3'>Find a Dealer by Name</h1>
-              <div class='searchElementColumn'>
-                <div class='searchFieldRelativeContainer'>
-                  <input type='text' name='dealerSearchDealerNameID' id='dealerSearchDealerNameID'
-			   class='searchField' value='Dealer Name' autocomplete='off'/>
-                  </div>
-                <div class='searchFieldRelativeContainer'>
-                  <div class='searchFieldAbsoluteContainer'>
-                    <div id='dealerSearchDealerNameAutoCompleteID'></div>
-                    </div>
-                  </div>
-                </div>
-              <div class='searchElementColumn'>
-                <input type='button' name='dealerSearchName' id='dealerSearchDealerNameButtonID' class='searchButton' value='search' />
-                </div>
-              <div class='clearFloat'></div>
-              </div>
-            </div>dddddd
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-	
+		<div id='contentWrapper'>
+			<div id='searchDivOuter' class='searchDivOuter'>
+				<div id='searchDivInner' class='searchDivInner'>
+					<div id='searchDivColumnOuter' class='searchDivColumnOuter'>
+						<div id='searchDivColumnInner' class='searchDivColumnInner'>
+							<div id='searchComponentOuter' class='searchComponentOuter'>
+								<div id='searchComponentInner' class='searchComponentInner'>
+									<div id='UKDealerNameComponent' class='searchComponentUK'>
+          								<div class='searchElement'>
+              								<h1 class='formHeadingH3'>Find a Dealer by Name</h1>
+              								<div class='searchElementColumn'>
+                								<div class='searchFieldRelativeContainer'>
+                  									<input type='text' name='dealerSearchDealerNameID' id='dealerSearchDealerNameID'
+			   										class='searchField' value='Dealer Name' autocomplete='off'/>
+                  								</div>
+                								<div class='searchFieldRelativeContainer'>
+                  									<div class='searchFieldAbsoluteContainer'>
+                    									<div id='dealerSearchDealerNameAutoCompleteID'>
+														</div>
+                    								</div>
+                  								</div>
+                							</div>
+              								<div class='searchElementColumn'>
+                								<input type='button' name='dealerSearchName' id='dealerSearchDealerNameButtonID' class='searchButton' value='search' />
+                							</div>
+              								<div class='clearFloat'>
+											</div>
+              							</div>
+            						</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
