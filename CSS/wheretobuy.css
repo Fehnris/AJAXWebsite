@@ -99,8 +99,11 @@ body {
 }
 .searchComponentUK, .searchComponentWW {
 	position: static;
+	float: left;
+	width: 33%;
+	/*position: static;
 	width: auto;
-	height: 100px;
+	height: 100px;*/
 }
 .relativeComponentContainer {
 	position: static;
