@@ -83,7 +83,7 @@ $authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PH
                   								</div>
                 							</div>
               								<div class='searchElementColumn'>
-                								<input type='button' name='dealerSearchName' id='dealerSearchDealerNameButtonID' class='searchButton' value='search' />
+                								<input type='button' name='dealerSearchName' id='dealerSearchDealerNameButtonID' class='searchButton' value='&ndsp;' />
                 							</div>
               								<div class='clearFloat'>
 											</div>
