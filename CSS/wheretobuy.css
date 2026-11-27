@@ -467,7 +467,7 @@ body {
 	.searchComponentUK, .searchComponentWW {
 		position: static;
 		float: left;
-		width: 33%;
+		width: 100%;
 	}
 	.searchOptionIndicatorUK, .searchOptionIndicatorWW {
 		position: static;
