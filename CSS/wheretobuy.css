@@ -249,7 +249,6 @@ body {
 	border-bottom: 1px solid #bbbbbb;
 	border-top: 0px solid #bbbbbb;
 	padding-left: 0px;
-	display: none;
 	padding-right: 0px;
 }
 #distributorSearchDistributorNameAutoCompleteID {
@@ -426,6 +425,10 @@ body {
 	width: 60%;
 	background-image: url(../images/distdealimages/audiovenuelondon.jpg);
 	background-size: cover;
+}
+
+.hidden {
+	display: none;
 }
 
 @media screen and (min-width:615px) {

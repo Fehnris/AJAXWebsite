@@ -77,7 +77,7 @@ $authObj = new AJAXManagerServer($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, "PH
                   								</div>
                 								<div class='searchFieldRelativeContainer'>
                   									<div class='searchFieldAbsoluteContainer'>
-                    									<div id='dealerSearchDealerNameAutoCompleteID'>
+                    									<div id='dealerSearchDealerNameAutoCompleteID' class='hidden'>
 														</div>
                     								</div>
                   								</div>
